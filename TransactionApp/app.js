@@ -8,9 +8,14 @@ function App() {
     return (
         <div>
             <div>Date: </div>
-            <input></input>
+            <input type="date"></input>
+
+            <div>Day: </div>
+            <input type="text" placeholder="Day"></input>
+
             <div>Amount: </div>
-            <input></input>
+            <input type="number" placeholder="Amount in Rs"></input>
+
             <div>Details: </div>
             <input></input>
         </div>
