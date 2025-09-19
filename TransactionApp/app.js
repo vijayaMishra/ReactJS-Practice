@@ -1,6 +1,6 @@
 function TransactionHeader() {
     return (
-        <div class="header">Transaction App</div>
+        <div className="header">Transaction App</div>
     )
 }
 
@@ -8,18 +8,20 @@ function App() {
     return (
         <div>
             <div>Date: </div>
-            <input type="date"></input>
+            <input type="date" />
 
             <div>Day: </div>
-            <input type="text" placeholder="Day"></input>
+            <input type="text" placeholder="Day" />
 
             <div>Amount: </div>
-            <input type="number" placeholder="Amount in Rs"></input>
+            <input type="number" placeholder="Amount in Rs" />
 
             <div>Details: </div>
-            <input></input>
+            <input />
+
+            <br />
         </div>
-    )
+    );
 }
 
 const rootElement = document.querySelector("#root");
