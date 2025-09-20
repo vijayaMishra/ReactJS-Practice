@@ -7,19 +7,27 @@ function TransactionHeader() {
 function App() {
     return (
         <div>
-            <div>Date: </div>
-            <input type="date" />
+            <div className="displayBeside">
+                <div>Date: </div>
+                <input type="date"/>
+            </div>
 
-            <div>Day: </div>
-            <input type="text" placeholder="Day" />
+            <div className="displayBeside">
+                <div>Day: </div>
+                <input className="inputLine" type="text" placeholder="Day" />
+            </div>
 
-            <div>Amount: </div>
-            <input type="number" placeholder="Amount in Rs" />
+            <div className="displayBeside">
+                <div>Amount: </div>
+                <input className="inputLine" type="number" placeholder="Amount in Rs" />
+            </div>
 
-            <div>Details: </div>
-            <input />
+            <div className="displayBeside">
+                <div>Details: </div>
+                <input className="inputLine" />
+            </div>
 
-            <br />
+            <div className="lineSeparation"></div>
         </div>
     );
 }

@@ -1,10 +1,31 @@
+body {
+    margin: 0;
+    padding: 0
+}
 .header {
     text-align: center;
     background-color: purple;
     color: white;
     padding: 20px;
-    margin: 10px;
-    top: -8px;
+    margin-bottom: 30px;
+    position: relative;
     font-size: 25px;
     font-family: "Playwrite DE SAS", cursive;  
+    
 }
+.lineSeparation {
+    /* border: 1px solid red; */
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin: 10px 0 20px 0;
+}
+.displayBeside {
+    display: flex;
+    margin-bottom: 10px;
+}
+.inputLine {
+    border: none;
+    border-bottom: 1px solid black;
+
+} 
