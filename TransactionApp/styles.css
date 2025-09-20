@@ -18,11 +18,12 @@ body {
     height: 1px;
     width: 100%;
     background-color: gray;
-    margin: 10px 0 20px 0;
+    margin: 25px 0;
 }
 .displayBeside {
     display: flex;
     margin-bottom: 10px;
+    padding-left: 10px;
 }
 .inputLine {
     border: none;
