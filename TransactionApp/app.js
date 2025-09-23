@@ -5,6 +5,16 @@ function TransactionHeader() {
 }
 
 function App() {
+    const [date, setDate] = React.useState("");
+    const [day, setDay] = React.useState("");
+    const [amount, setAmount] = React.useState(0);
+    const [details, setDetails] = React.useState("")
+
+    const [transactions, setTransactions] = React.useState([]);
+    function addTransactionDetails() {
+
+    }
+
     return (
         <div>
             <div className="displayBeside">
@@ -26,7 +36,9 @@ function App() {
                 <div>Details: </div>
                 <input className="inputLine" />
             </div>
-
+            <div className="addDetailsBtnParent">
+                <button className="addDetailsBtn" onClick={addTransactionDetails()}>Add details</button>
+            </div>
             <div className="lineSeparation"></div>
         </div>
     );
@@ -37,7 +49,7 @@ ReactDOM.render(
     <div>
         <TransactionHeader />
         <App />
-        <App />
+        {/* <App /> */}
     </div>,
     rootElement
 );
