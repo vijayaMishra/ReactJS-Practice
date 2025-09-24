@@ -11,6 +11,7 @@ function App() {
     const [details, setDetails] = React.useState("")
 
     const [transactions, setTransactions] = React.useState([]);
+    console.log("transactions", transactions);
     function addTransactionDetails() {
         const newTransaction = { date, day, amount, details };
         setTransactions([...transactions, newTransaction]);
@@ -56,11 +57,23 @@ function App() {
 
             <div className="displayBeside">
                 <div>Details: </div>
-                <input className="inputLine" onClick={detailsChangeHandler}/>
+                <input className="inputLine" onChange={detailsChangeHandler}/>
             </div>
             <div className="addDetailsBtnParent">
                 <button className="addDetailsBtn" onClick={addTransactionDetails}>Add details</button>
             </div>
+            <div>
+                Transaction details to appear here
+            
+            </div>
+            {transactions.map((transaction, index) => {
+                return <div key={index} className="transactionItem">
+                    <p>{transaction.date}</p>
+                    <p>{transaction.day}</p>
+                    <p>{transaction.amount}</p>
+                    <p>{transaction.details}</p>
+                </div>
+            })}
             <div className="lineSeparation"></div>
         </div>
     );
