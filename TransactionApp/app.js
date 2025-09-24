@@ -69,10 +69,10 @@ function App() {
             <div>
                 Transaction details to appear here
             </div>
-            
+
             {transactions.map((transaction, index) => {
                 return <div key={index} className="transactionItem">
-                    <p>{transaction.date}
+                    <p>{transaction.date}<br></br>
                         {transaction.day}
                         {transaction.amount}
                         {transaction.details}    
