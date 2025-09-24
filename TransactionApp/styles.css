@@ -20,16 +20,24 @@ body {
     background-color: gray;
     margin: 25px 0;
 }
-.displayBeside {
+.dateInput {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-left: 2px;
+    color: gray;
+}
+.transactionItem {
     display: flex;
     margin-bottom: 10px;
     padding-left: 5px;
     font-size: 16px;
     font-family: 'Poppins', Times, serif;
+    
 }
 .inputLine {
     border: none;
     border-bottom: 1px solid black;
+    margin-left: 5px;
 } 
 .addDetailsBtnParent {
     display: flex;

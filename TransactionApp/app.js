@@ -12,6 +12,7 @@ function App() {
 
     const [transactions, setTransactions] = React.useState([]);
     console.log("transactions", transactions);
+
     function addTransactionDetails() {
         const newTransaction = { date, day, amount, details };
         setTransactions([...transactions, newTransaction]);
@@ -23,7 +24,6 @@ function App() {
     }
 
     function dateChangeHandler(event) {
-        
         setDate(event.target.value);
     }
 
@@ -40,41 +40,46 @@ function App() {
     }
     return (
         <div>
-            <div className="displayBeside">
+            <div className="transactionItem">
                 <div>Date: </div>
-                <input type="date" onChange={dateChangeHandler}/>
+                <input type="date" className="dateInput" onChange={dateChangeHandler}></input>
             </div>
 
-            <div className="displayBeside">
+            <div className="transactionItem">
                 <div>Day: </div>
-                <input className="inputLine" type="text" placeholder="Day" onChange={dayChangeHandler} />
+                <input className="inputLine" type="text" placeholder="Day" onChange={dayChangeHandler}></input>
             </div>
 
-            <div className="displayBeside">
+            <div className="transactionItem">
                 <div>Amount: </div>
-                <input className="inputLine" type="number" placeholder="Amount in Rs" onChange={amountChangeHandler}/>
+                <input className="inputLine" type="number" placeholder="Amount in Rs" onChange={amountChangeHandler}></input>
             </div>
 
-            <div className="displayBeside">
+            <div className="transactionItem">
                 <div>Details: </div>
-                <input className="inputLine" onChange={detailsChangeHandler}/>
+                <input className="inputLine" onChange={detailsChangeHandler} placeholder="Expense detail"></input>
             </div>
+
             <div className="addDetailsBtnParent">
                 <button className="addDetailsBtn" onClick={addTransactionDetails}>Add details</button>
             </div>
+            
+            <div className="lineSeparation"></div>
+
             <div>
                 Transaction details to appear here
-            
             </div>
+            
             {transactions.map((transaction, index) => {
                 return <div key={index} className="transactionItem">
-                    <p>{transaction.date}</p>
-                    <p>{transaction.day}</p>
-                    <p>{transaction.amount}</p>
-                    <p>{transaction.details}</p>
+                    <p>{transaction.date}
+                        {transaction.day}
+                        {transaction.amount}
+                        {transaction.details}    
+                    </p>
                 </div>
             })}
-            <div className="lineSeparation"></div>
+            
         </div>
     );
 }
