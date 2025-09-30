@@ -5,7 +5,8 @@ function TransactionHeader() {
 }
 
 function App() {
-    const [date, setDate] = React.useState("");
+    const today = new Date().toISOString().split('T')[0];
+    const [date, setDate] = React.useState(today);
     const [day, setDay] = React.useState("");
     const [amount, setAmount] = React.useState(0);
     const [details, setDetails] = React.useState("")
@@ -42,7 +43,7 @@ function App() {
         <div>
             <div className="transactionItem">
                 <div>Date: </div>
-                <input type="date" className="dateInput" onChange={dateChangeHandler}></input>
+                <input type="date" className="dateInput" value={date} onChange={dateChangeHandler}></input>
             </div>
 
             <div className="transactionItem">
