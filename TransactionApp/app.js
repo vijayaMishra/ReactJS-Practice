@@ -90,17 +90,17 @@ function App() {
             </div>
 
             {transactions.map((transaction, index) => {
-                return <div className="parentOfEachItem">
-                    <div key={index} className="transactionItem">
-                        <p>{transaction.date}<br></br>
-                            {transaction.day}<br></br>
-                            {transaction.amount}<br></br>
-                            {transaction.details}    
-                        </p>
+                return <div key={index} className="eachTransactionCard">
+                    <div className="dateNDay">
+                        <p className="transactionItem">{transaction.date}</p>
+                        <p>{transaction.day}</p>
+                    </div>
+                    <div className="amtAndDetails">
+                        <p className="transactionItem">{transaction.details}</p>
+                        <p className="transactionItem">{transaction.amount}</p>         
                     </div>
                 </div>
-            })}
-            
+            })}     
         </div>
     );
 }
