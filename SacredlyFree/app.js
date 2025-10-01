@@ -9,8 +9,8 @@
     function getInitialBhajanList() {
         const bhajanStoredInLocalStorage = localStorage.getItem("bhajanListLocalStorage");
         let parsedBhajansStoredInLocalStorage = [];
-        console.log("bhajanStoredInLocalStorage:", bhajanStoredInLocalStorage);
-        console.log("typeof(bhajanStoredInLocalStorage) = ", typeof(bhajanStoredInLocalStorage));
+        //console.log("bhajanStoredInLocalStorage:", bhajanStoredInLocalStorage);
+        //console.log("typeof(bhajanStoredInLocalStorage) = ", typeof(bhajanStoredInLocalStorage));
         
         if(bhajanStoredInLocalStorage) {
             parsedBhajansStoredInLocalStorage = JSON.parse(bhajanStoredInLocalStorage);

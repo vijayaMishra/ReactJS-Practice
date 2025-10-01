@@ -4,6 +4,22 @@ function TransactionHeader() {
     )
 }
 
+//CATCH is localStorage ALWAYS stores OBJECTS
+function getInitialTransactions() {
+    const transactionsInLocalStorage = localStorage.getItem("transactionsLocalStorage");
+    console.log("transactionsInLocalStorage: ", transactionsInLocalStorage);
+    console.log("typeof(transactionsInLocalStorage): ", typeof(transactionsInLocalStorage));
+    let parsedTransactions = [];
+    parsedTransactions = JSON.parse(transactionsInLocalStorage); //I was earlier pushing it in array instead of =
+    console.log(JSON.parse(transactionsInLocalStorage));
+    console.log("typeof(parsedTransactions): ", typeof(parsedTransactions));
+    if(transactionsInLocalStorage === null) {
+        return [];
+    } else {
+        return parsedTransactions;
+    }
+}
+
 function App() {
     const today = new Date().toISOString().split('T')[0];
     const [date, setDate] = React.useState(today);
@@ -11,7 +27,7 @@ function App() {
     const [amount, setAmount] = React.useState(0);
     const [details, setDetails] = React.useState("")
 
-    const [transactions, setTransactions] = React.useState([]);
+    const [transactions, setTransactions] = React.useState(getInitialTransactions());
     console.log("transactions", transactions);
 
     function addTransactionDetails() {
@@ -22,6 +38,7 @@ function App() {
         setDay("");
         setAmount(0);
         setDetails("");
+        localStorage.setItem("transactionsLocalStorage", JSON.stringify([...transactions, newTransaction]));
     }
 
     function dateChangeHandler(event) {
