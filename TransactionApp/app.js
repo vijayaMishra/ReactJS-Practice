@@ -29,13 +29,17 @@ function App() {
 
     function addTransactionDetails() {
         const newTransaction = { date, day, amount, details };
-        setTransactions([...transactions, newTransaction]);
-        //clearing userInput after the new transaction is added
-        setDate("");
-        setDay("");
-        setAmount(0);
-        setDetails("");
-        localStorage.setItem("transactionsLocalStorage", JSON.stringify([...transactions, newTransaction]));
+        if( day && date && details) {
+            setTransactions([...transactions, newTransaction]);
+            //clearing userInput after the new transaction is added
+            setDate("");
+            setDay("");
+            setAmount(0);
+            setDetails("");
+            localStorage.setItem("transactionsLocalStorage", JSON.stringify([...transactions, newTransaction]));
+        } else {
+            alert("Please fill in the details correctly!");
+        }
     }
 
     function dateChangeHandler(event) {
