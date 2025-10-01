@@ -4,14 +4,14 @@ body {
 }
 .header {
     text-align: center;
-    background-color: purple;
+    background-color: rgb(16, 73, 83);
     color: white;
     padding: 20px;
     margin-bottom: 30px;
     position: relative;
     font-size: 25px;
     font-family: "Playwrite DE SAS", cursive;  
-    
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.3);
 }
 .lineSeparation {
     /* border: 1px solid red; */
@@ -34,6 +34,12 @@ body {
     font-family: 'Poppins', Times, serif;
     
 }
+.parentOfEachItem {
+    background-color: rgb(208, 246, 246);
+    border-radius: 10px;
+    margin: 8px;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.3);
+}
 .inputLine {
     border: none;
     border-bottom: 1px solid black;
@@ -45,19 +51,19 @@ body {
     /* border: 2px solid red; */
 }
 .addDetailsBtn {
-    background-color: purple;
-    padding: 10px;
+    background-color: rgb(48, 96, 103);
+    padding: 10px 20px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
     color: white;
     font-size: 16px;
 }
 .addDetailsBtn:active {
     background-color: rgb(94, 18, 94);
-    padding: 10px;
+    padding: 10px 20px;
     margin: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: none;
     color: white;
     font-size: 16px;
