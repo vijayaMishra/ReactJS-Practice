@@ -13,7 +13,7 @@
         //console.log("typeof(bhajanStoredInLocalStorage) = ", typeof(bhajanStoredInLocalStorage));
         
         if(bhajanStoredInLocalStorage) {
-            parsedBhajansStoredInLocalStorage = JSON.parse(bhajanStoredInLocalStorage);
+            parsedBhajansStoredInLocalStorage = JSON.parse(bhajanStoredInLocalStorage); //converting string to an object 
         }
         return parsedBhajansStoredInLocalStorage;
        

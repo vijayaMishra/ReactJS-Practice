@@ -7,17 +7,14 @@ function TransactionHeader() {
 //CATCH is localStorage ALWAYS stores OBJECTS
 function getInitialTransactions() {
     const transactionsInLocalStorage = localStorage.getItem("transactionsLocalStorage");
-    console.log("transactionsInLocalStorage: ", transactionsInLocalStorage);
-    console.log("typeof(transactionsInLocalStorage): ", typeof(transactionsInLocalStorage));
+    
     let parsedTransactions = [];
+    if(transactionsInLocalStorage) {
     parsedTransactions = JSON.parse(transactionsInLocalStorage); //I was earlier pushing it in array instead of =
-    console.log(JSON.parse(transactionsInLocalStorage));
-    console.log("typeof(parsedTransactions): ", typeof(parsedTransactions));
-    if(transactionsInLocalStorage === null) {
-        return [];
-    } else {
-        return parsedTransactions;
     }
+    console.log("typeof(JSON.parse(transactionsInLocalStorage)): ", typeof(JSON.parse(transactionsInLocalStorage))); //object, arrays are Objects in JS
+    
+    return parsedTransactions;
 }
 
 function App() {
