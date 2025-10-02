@@ -29,6 +29,7 @@ function App() {
 
     function addTransactionDetails() {
         const newTransaction = { date, day, amount, details };
+        console.log("BEFORE day: ", day, " date: ", date, " details: ", details);
         if( day && date && details) {
             setTransactions([...transactions, newTransaction]);
             //clearing userInput after the new transaction is added
@@ -66,17 +67,17 @@ function App() {
 
             <div className="transactionItem">
                 <div>Day: </div>
-                <input className="inputLine" type="text" placeholder="Day" onChange={dayChangeHandler}></input>
+                <input className="inputLine" type="text" value={day} placeholder="Day" onChange={dayChangeHandler}></input>
             </div>
 
             <div className="transactionItem">
                 <div>Amount: </div>
-                <input className="inputLine" type="number" placeholder="Amount in Rs" onChange={amountChangeHandler}></input>
+                <input className="inputLine" type="number" value={amount} placeholder="Amount in Rs" onChange={amountChangeHandler}></input>
             </div>
 
             <div className="transactionItem">
                 <div>Details: </div>
-                <input className="inputLine" onChange={detailsChangeHandler} placeholder="Expense detail"></input>
+                <input className="inputLine" onChange={detailsChangeHandler} value={details} placeholder="Expense detail"></input>
             </div>
 
             <div className="addDetailsBtnParent">
