@@ -33,8 +33,7 @@ function App() {
         if( day && date && details) {
             setTransactions([...transactions, newTransaction]);
             //clearing userInput after the new transaction is added
-            setDate("");
-            setDay("");
+            
             setAmount(0);
             setDetails("");
             localStorage.setItem("transactionsLocalStorage", JSON.stringify([...transactions, newTransaction]));
