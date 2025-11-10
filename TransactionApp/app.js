@@ -27,6 +27,8 @@ function App() {
     const [transactions, setTransactions] = React.useState(getInitialTransactions());
     console.log("transactions", transactions);
 
+    const transactionsDateMap = [];
+    
     function addTransactionDetails() {
         const newTransaction = { date, day, amount, details };
         console.log("BEFORE day: ", day, " date: ", date, " details: ", details);
