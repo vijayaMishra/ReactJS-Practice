@@ -11,6 +11,12 @@ function SadhnaCard() {
             <h3 className="day">Japa-Time</h3>
             {/* <input type="time"></input> */}
         </div>
+        <div className="one-liner">
+            <h3 className="dash-line">1</h3>
+            <h3 className="dash-line">2</h3>
+            <h3 className="dash-line">3</h3>
+            <h3 className="dash-line">4</h3>
+        </div>
     </div>
 };
 

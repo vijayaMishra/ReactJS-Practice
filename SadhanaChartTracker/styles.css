@@ -8,3 +8,6 @@
 .day, .date {
     margin: 5px;
 }
+.dash-line {
+    border: 1px solid brown;
+}
