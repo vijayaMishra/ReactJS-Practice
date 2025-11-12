@@ -1,12 +1,15 @@
 
 function SadhnaCard() {    
     return <div >
-        <h3>Sadhana Card</h3>
-        <div class="one-liner">
-            <h4>Day</h4>
-            <h4 type="date">Date</h4>
-            <input type="time"></input>
-            <input type="time"></input>
+        <h2 className="main-heading">Sadhana Card</h2>
+        <h5>Q. What is that one thing which pleases Maharaj?</h5>
+        <h5>A. Following the authorities, focused in Sadhana and Hearing</h5>
+        <div className="one-liner">
+            <h3 className="day">Day</h3>
+            <h3 className="date" type="date">Date</h3>
+            <h3 className="day">Got-Up Time</h3>
+            <h3 className="day">Japa-Time</h3>
+            {/* <input type="time"></input> */}
         </div>
     </div>
 };
