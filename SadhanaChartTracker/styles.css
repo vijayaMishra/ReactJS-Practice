@@ -1,6 +1,6 @@
 .one-liner {
     display: flex;
-    
+    justify-content: space-around;
 }
 .main-heading {
     text-align: center;
@@ -10,4 +10,5 @@
 }
 .dash-line {
     border: 1px solid brown;
+    width: 50px; 
 }
