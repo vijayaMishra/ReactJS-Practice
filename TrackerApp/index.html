@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion Hands-On</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-heading">
+        <h2 class="everyday-tracker">Everyday Tracker</h2>
+        <p class="mainpage-subheading">Just Observe Yourself</p>
+    </div>
+    <p class="other-subheading">Tracker to Improve even if it is by 1%</p>
+    <p class="other-subheading">And to Live Life by the Fullest</p>
+
+    <button class="accordion">Health Tracker</button>
+    <div class="section-details">
+        <p>Stretching done? Pranayam done. Observing Breath, Sitting in Silence, Expanding Chest while breathing in</p>
+    </div>
+
+    <button class="accordion">Sadhana / Morning Routine</button>
+    <div class="section-details">
+        <p>There will be blank boxes about wake up time, jap started at, jap completed at, rounds chanted, BG/SB/CC verse recitation, sacred text reading field as input box</p>
+    </div>
+
+    <button class="accordion">Evening Routine (of prev day's)</button>
+    <div class="section-details">
+        <p>This section will include winding down time, sleeping time, sayan kirtan for the pleasure of Sri Sri Radha Gopinath</p>
+    </div>
+
+    <button class="accordion">Study Tracker</button>
+    <div class="section-details">
+        <p>Also one of the most important sections. It has been my looong endeavour, goal to see myself in big tech, doing justice to all the hardwork put by me (in studies) and my parents, will be so proud and to work for Krsna's pleasure and use Lakshmi in a Krsna Conscious way. I will feel accomplished like a big milestone achieved. Received such big Mercy of Krsna that my husband loves seeing me work with the pay I deserve as he says and encourages me to study daily and loves to teach students, I know he will be so proud too. Heart full with gratitude.</p>
+    </div>
+
+    <script>
+        //Think of it like this -
+        //Find All Buttons - We tell JavaScript "Hey, find all buttons with class accordion"
+        var accordions = document.querySelectorAll(".accordion");
+
+        //Go through each button like counting - button1, button2, button3 etc.
+        for(var i=0; i < accordions.length; i++) {
+            // Wait for a click - For each button, wait until someone clicks it
+
+            accordions[i].addEventListener("click", function() {
+
+                //When 'clicked' Change the button color (add/remove 'active' class)
+                this.classList.toggle('active');
+                this.
+            });
+        }
+    </script>
+</body>
+</html>

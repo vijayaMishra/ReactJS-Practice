@@ -5,6 +5,12 @@ function SadhnaCard() {
         <h5>Q. What is that one thing which pleases Maharaj?</h5>
         <h5>A. Following the authorities, focused in Sadhana and Hearing</h5>
         
+        <input placeholder="Day"></input><input placeholder="Date"></input><input placeholder="Wake-up Time"></input>
+        <input placeholder="Japa Begins at"></input><input placeholder="Japa Completed at"></input>
+
+        <button className="updateTrackerBtn">Update Tracker</button>
+        <br></br>
+
         <table>
             <thead>    
                 <tr>
@@ -18,15 +24,13 @@ function SadhnaCard() {
             
             <tbody>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Mon</td>
+                    <td>17-Nov-25</td>
+                    <td>3:55 AM</td>
+                    <td>4:30 AM</td>
+                    <td>9 PM</td>
                 </tr>
-            </tbody>
-
-            <tbody>
+            
                 <tr>
                     <td></td>
                     <td></td>
