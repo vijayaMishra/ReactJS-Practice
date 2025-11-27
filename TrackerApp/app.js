@@ -11,7 +11,7 @@ for(let i=0; i<accordions.length; i++) {
         if(sectionDetails.style.display === "none" || sectionDetails.style.display === "") {
             sectionDetails.style.display = "block";
         } else {
-            sectionDetails.style.display = "none"
+            sectionDetails.style.display = "none";
         }
 
     })

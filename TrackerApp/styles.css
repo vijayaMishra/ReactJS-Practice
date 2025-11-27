@@ -26,12 +26,13 @@ body {
     background-color: rgb(179, 223, 244);
     border: none;
     cursor: pointer;
-    margin: 5px 0;
+    margin: 5px 10px;
     width: 100%;
     text-align: left;
     padding: 18px;
     font-size: 15px;
     box-sizing: border-box;
+    border-radius: 10px;
 }
 
 .accordion:hover, .accordion:active {
