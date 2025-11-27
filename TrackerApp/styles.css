@@ -40,4 +40,5 @@ body {
 
 .section-details {
     padding: 18px;
+    display: none; /* hide by default */
 }
