@@ -41,21 +41,21 @@ function SadhnaCard() {
             
             <tbody>
                 <tr>
-                    <td>Mon</td>
-                    <td>17-Nov-25</td>
-                    <td>3:55 AM</td>
-                    <td>4:30 AM</td>
-                    <td>9 PM</td>
-                    <td>17</td>
+                    <td className="tableData">Mon</td>
+                    <td className="tableData">17-Nov-25</td>
+                    <td className="tableData">3:55 AM</td>
+                    <td className="tableData">4:30 AM</td>
+                    <td className="tableData">9 PM</td>
+                    <td className="tableData">17</td>
                 </tr>
             
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td className="tableData"></td>
+                    <td className="tableData"></td>
+                    <td className="tableData"></td>
+                    <td className="tableData"></td>
+                    <td className="tableData"></td>
+                    <td className="tableData"></td>
                 </tr>
             </tbody>
         

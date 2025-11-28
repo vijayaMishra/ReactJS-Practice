@@ -24,3 +24,7 @@
 .updateTrackerBtn:active{
     background-color: rgb(250, 202, 143);
 }
+
+.tableData {
+    text-align: center;
+}
