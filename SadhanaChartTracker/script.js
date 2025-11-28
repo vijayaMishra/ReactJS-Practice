@@ -1,7 +1,7 @@
 
 function SadhnaCard() {    
     return <div >
-        <h2 className="main-heading">Sadhana Card</h2>
+        <h2 className="main-heading">Sadhana Chart</h2>
         <p>I Speak personally to each one of you - HH Radhanath Swami Maharaj</p>
         <p>1st instruction: Be very attentive and concentrative in chanting your minimum rounds and more if possible, every day.</p>
 
