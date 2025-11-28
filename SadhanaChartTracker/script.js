@@ -4,12 +4,27 @@ function SadhnaCard() {
         <h2 className="main-heading">Sadhana Card</h2>
         <p>I Speak personally to each one of you - HH Radhanath Swami Maharaj</p>
         <p>1st instruction: Be very attentive and concentrative in chanting your minimum rounds and more if possible, every day.</p>
-        
-        <input placeholder="Day"></input><input placeholder="Date"></input><input placeholder="Wake-up Time"></input>
-        <input placeholder="Japa Begins at"></input><input placeholder="Japa Completed at"></input>
-        <input placeholder="No. of Rounds"></input>
 
-        <button className="updateTrackerBtn">Update Tracker</button>
+        <div className="inputSectionParentGrid">
+            <input placeholder="Day" className="inputSection"></input>
+            <input placeholder="Date" className="inputSection"></input>
+        </div>
+
+        <div className="inputSectionParentGrid">
+            <input placeholder="Wake-up Time" className="inputSection"></input>
+            <input placeholder="Japa Begins at" className="inputSection"></input>
+        </div>
+
+        <div className="inputSectionParentGrid">
+            <input placeholder="Japa Completed at" className="inputSection"></input>
+            <input placeholder="No. of Rounds chanted" className="inputSection"></input>
+        </div>
+
+        <div className="updateBtnParent">
+            <button className="updateTrackerBtn">Update Tracker</button>
+        </div>
+
+        <br></br>
         <br></br>
 
         <table>
