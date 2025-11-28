@@ -2,11 +2,12 @@
 function SadhnaCard() {    
     return <div >
         <h2 className="main-heading">Sadhana Card</h2>
-        <h5>Q. What is that one thing which pleases Maharaj?</h5>
-        <h5>A. Following the authorities, focused in Sadhana and Hearing</h5>
+        <p>I Speak personally to each one of you - HH Radhanath Swami Maharaj</p>
+        <p>1st instruction: Be very attentive and concentrative in chanting your minimum rounds and more if possible, every day.</p>
         
         <input placeholder="Day"></input><input placeholder="Date"></input><input placeholder="Wake-up Time"></input>
         <input placeholder="Japa Begins at"></input><input placeholder="Japa Completed at"></input>
+        <input placeholder="No. of Rounds"></input>
 
         <button className="updateTrackerBtn">Update Tracker</button>
         <br></br>
