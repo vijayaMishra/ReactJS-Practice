@@ -32,9 +32,10 @@ function SadhnaCard() {
                 <tr>
                     <th>Day</th>
                     <th>Date</th>
-                    <th>Got-up @ </th>
-                    <th>Jap start-time</th>
-                    <th>Jap end-time</th>
+                    <th>Wake up time</th>
+                    <th>Japa begun at</th>
+                    <th>Japa done time</th>
+                    <th>No. of rounds chanted</th>
                 </tr>
             </thead>
             
@@ -45,9 +46,11 @@ function SadhnaCard() {
                     <td>3:55 AM</td>
                     <td>4:30 AM</td>
                     <td>9 PM</td>
+                    <td>17</td>
                 </tr>
             
                 <tr>
+                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>

@@ -1,16 +1,5 @@
-.one-liner {
-    display: flex;
-    justify-content: space-around;
-}
 .main-heading {
     text-align: center;
-}
-.day, .date {
-    margin: 5px;
-}
-.dash-line {
-    border: 1px solid brown;
-    width: 50px; 
 }
 .inputSectionParentGrid {
     display: flex;
