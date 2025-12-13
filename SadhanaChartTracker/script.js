@@ -6,18 +6,36 @@ function SadhnaCard() {
         <p>1st instruction: Be very attentive and concentrative in chanting your minimum rounds and more if possible, every day.</p>
 
         <div className="inputSectionParentGrid">
-            <input placeholder="Day" className="inputSection"></input>
-            <input placeholder="Date" className="inputSection"></input>
+            <input 
+                placeholder="Day" 
+                className="inputSection">
+            </input>
+            <input 
+                placeholder="Date" 
+                className="inputSection">
+            </input>
         </div>
 
         <div className="inputSectionParentGrid">
-            <input placeholder="Wake-up Time" className="inputSection"></input>
-            <input placeholder="Japa Begins at" className="inputSection"></input>
+            <input 
+                placeholder="Wake-up Time" 
+                className="inputSection">
+            </input>
+            <input 
+                placeholder="Japa Begins at" 
+                className="inputSection">
+            </input>
         </div>
 
         <div className="inputSectionParentGrid">
-            <input placeholder="Japa Completed at" className="inputSection"></input>
-            <input placeholder="No. of Rounds chanted" className="inputSection"></input>
+            <input 
+                placeholder="Japa Completed at" 
+                className="inputSection">
+            </input>
+            <input 
+                placeholder="No. of Rounds chanted" 
+                className="inputSection">
+            </input>
         </div>
 
         <div className="updateBtnParent">
