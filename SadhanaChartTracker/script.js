@@ -30,15 +30,6 @@ function SadhanaEntries() {
                 <td className="tableData">{entry.japaCompleted}</td>
                 <td className="tableData">{entry.numberOfRoundsChanted}</td>
             </tr>
-        
-            <tr>
-                <td className="tableData"></td>
-                <td className="tableData"></td>
-                <td className="tableData"></td>
-                <td className="tableData"></td>
-                <td className="tableData"></td>
-                <td className="tableData"></td>
-            </tr>
         </tbody>
 
     </table>
