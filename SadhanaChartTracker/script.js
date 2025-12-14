@@ -1,13 +1,23 @@
 
 function SadhanaEntries() {
-    const entries = [{
-        day: "sun",
-        date: "14 Dec",
-        wakeupTime: "6 AM",
-        japaBegins: "4:30 AM",
-        japaCompleted: "6:45 AM",
-        numberOfRoundsChanted: 17
-    }];
+    const entries = [
+        {
+            day: "sun",
+            date: "14 Dec",
+            wakeupTime: "7:30 PM",
+            japaBegins: "3 PM",
+            japaCompleted: "9 PM",
+            numberOfRoundsChanted: 16
+        },
+        {
+            day: "mon",
+            date: "15 Dec",
+            wakeupTime: "6 AM",
+            japaBegins: "4:30 AM",
+            japaCompleted: "6:45 AM",
+            numberOfRoundsChanted: 17
+        }
+    ];
 
     return <table>
         <thead>    
@@ -22,16 +32,16 @@ function SadhanaEntries() {
         </thead>
         
         <tbody>
-            entries.map(function(entry) {
-                <tr>
-                <td className="tableData">{entry.day}</td>
-                <td className="tableData">{entry.date}</td>
-                <td className="tableData">{entry.wakeupTime}</td>
-                <td className="tableData">{entry.japaBegins}</td>
-                <td className="tableData">{entry.japaCompleted}</td>
-                <td className="tableData">{entry.numberOfRoundsChanted}</td>
-            </tr>
-            });
+            {entries.map(function(entry) {
+                return <tr>
+                    <td className="tableData">{entry.day}</td>
+                    <td className="tableData">{entry.date}</td>
+                    <td className="tableData">{entry.wakeupTime}</td>
+                    <td className="tableData">{entry.japaBegins}</td>
+                    <td className="tableData">{entry.japaCompleted}</td>
+                    <td className="tableData">{entry.numberOfRoundsChanted}</td>
+                </tr>
+            })}
 
         </tbody>
 
