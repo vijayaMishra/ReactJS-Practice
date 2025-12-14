@@ -1,10 +1,50 @@
 
-function SadhnaCard() {    
-    return <div >
-        <h2 className="main-heading">Sadhana Chart</h2>
-        <p>I Speak personally to each one of you - HH Radhanath Swami Maharaj</p>
-        <p>1st instruction: Be very attentive and concentrative in chanting your minimum rounds and more if possible, every day.</p>
+function SadhanaEntries() {
+    const entry = {
+        day: "sun",
+        date: "14 Dec",
+        wakeupTime: "6 AM",
+        japaBegins: "4:30 AM",
+        japaCompleted: "6:45 AM",
+        numberOfRoundsChanted: 17
+    };
 
+    return <table>
+        <thead>    
+            <tr>
+                <th>Day</th>
+                <th>Date</th>
+                <th>Wake up time</th>
+                <th>Japa begun at</th>
+                <th>Japa done time</th>
+                <th>No. of rounds chanted</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td className="tableData">{entry.day}</td>
+                <td className="tableData">{entry.date}</td>
+                <td className="tableData">{entry.wakeupTime}</td>
+                <td className="tableData">{entry.japaBegins}</td>
+                <td className="tableData">{entry.japaCompleted}</td>
+                <td className="tableData">{entry.numberOfRoundsChanted}</td>
+            </tr>
+        
+            <tr>
+                <td className="tableData"></td>
+                <td className="tableData"></td>
+                <td className="tableData"></td>
+                <td className="tableData"></td>
+                <td className="tableData"></td>
+                <td className="tableData"></td>
+            </tr>
+        </tbody>
+
+    </table>
+}
+function SadhanaInput() {
+    return <div>
         <div className="inputSectionParentGrid">
             <input 
                 placeholder="Day" 
@@ -42,45 +82,27 @@ function SadhnaCard() {
             <button className="updateTrackerBtn">Update Tracker</button>
         </div>
 
+    </div>
+}
+
+
+function App() {   
+
+    return <div >
+        <h2 className="main-heading">Sadhana Chart</h2>
+        <p>I Speak personally to each one of you - HH Radhanath Swami Maharaj</p>
+        <p>1st instruction: Be very attentive and concentrative in chanting your minimum rounds and more if possible, every day.</p>
+
+        <SadhanaInput/>
+        
         <br></br>
         <br></br>
 
-        <table>
-            <thead>    
-                <tr>
-                    <th>Day</th>
-                    <th>Date</th>
-                    <th>Wake up time</th>
-                    <th>Japa begun at</th>
-                    <th>Japa done time</th>
-                    <th>No. of rounds chanted</th>
-                </tr>
-            </thead>
-            
-            <tbody>
-                <tr>
-                    <td className="tableData">Mon</td>
-                    <td className="tableData">17-Nov-25</td>
-                    <td className="tableData">3:55 AM</td>
-                    <td className="tableData">4:30 AM</td>
-                    <td className="tableData">9 PM</td>
-                    <td className="tableData">17</td>
-                </tr>
-            
-                <tr>
-                    <td className="tableData"></td>
-                    <td className="tableData"></td>
-                    <td className="tableData"></td>
-                    <td className="tableData"></td>
-                    <td className="tableData"></td>
-                    <td className="tableData"></td>
-                </tr>
-            </tbody>
-        
-        </table>
+        <SadhanaEntries></SadhanaEntries>
+
     </div>
 }
 
 // Render the component to the DOM
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<SadhnaCard />);
+root.render(<App />);
