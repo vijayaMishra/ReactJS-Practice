@@ -1,13 +1,13 @@
 
 function SadhanaEntries() {
-    const entry = {
+    const entries = [{
         day: "sun",
         date: "14 Dec",
         wakeupTime: "6 AM",
         japaBegins: "4:30 AM",
         japaCompleted: "6:45 AM",
         numberOfRoundsChanted: 17
-    };
+    }];
 
     return <table>
         <thead>    
@@ -22,7 +22,8 @@ function SadhanaEntries() {
         </thead>
         
         <tbody>
-            <tr>
+            entries.map(function(entry) {
+                <tr>
                 <td className="tableData">{entry.day}</td>
                 <td className="tableData">{entry.date}</td>
                 <td className="tableData">{entry.wakeupTime}</td>
@@ -30,6 +31,8 @@ function SadhanaEntries() {
                 <td className="tableData">{entry.japaCompleted}</td>
                 <td className="tableData">{entry.numberOfRoundsChanted}</td>
             </tr>
+            });
+
         </tbody>
 
     </table>
